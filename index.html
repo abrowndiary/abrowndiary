@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Brown Diary | Tech, Business & Life</title>
+    <!-- Tailwind CSS CDN for high-end styling -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body { background-color: #0A0A0C; color: #F1F5F9; font-family: system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
+
+    <!-- Simple Modern Navbar -->
+    <nav class="border-b border-slate-800/60 sticky top-0 bg-[#0A0A0C]/80 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-sm font-bold tracking-wider uppercase text-slate-200">
+                A Brown Diary .
+            </span>
+            <div class="flex gap-6 text-sm text-slate-400">
+                <a href="#about" class="hover:text-slate-100 transition-colors">Core</a>
+                <a href="#resources" class="hover:text-slate-100 transition-colors">Templates</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Premium Hero Section -->
+    <header class="max-w-4xl mx-auto px-6 pt-24 pb-16 text-center relative">
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white via-slate-200 to-slate-400 leading-tight">
+            Decoding Tech. Scaling Ventures.<br>Navigating Life in Germany.
+        </h1>
+        <p class="mt-6 text-base md:text-lg text-slate-400 max-w-xl mx-auto leading-relaxed">
+            From a Mannheim Business School MBA to implementing AI, automation, and cybersecurity solutions. Sharing tactical experiences, career guidance, and unedited chapters of my startup journey.
+        </p>
+        
+        <!-- Call to Action Buttons -->
+        <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a href="#resources" class="inline-flex items-center bg-slate-100 text-slate-900 px-5 py-2.5 rounded-lg font-medium text-sm hover:bg-slate-200 transition-all shadow-lg">
+                Get Free CV Template
+            </a>
+            <a href="https://youtube.com" target="_blank" class="inline-flex items-center bg-slate-900 text-slate-300 border border-slate-800 px-5 py-2.5 rounded-lg font-medium text-sm hover:bg-slate-800 transition-all">
+                Watch on YouTube
+            </a>
+        </div>
+    </header>
+
+    <!-- Three Pillars Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-3 gap-6">
+            
+            <!-- Pillar 1 -->
+            <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm hover:border-indigo-500/40 transition-all">
+                <div class="text-indigo-400 font-semibold text-lg mb-2">AI & Automation</div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Designing scalable business automation workflows and integrating artificial intelligence seamlessly into digital solutions.
+                </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm hover:border-cyan-500/40 transition-all">
+                <div class="text-cyan-400 font-semibold text-lg mb-2">Cybersecurity</div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Protecting modern technical infrastructure and digital architectures against evolving cloud and asset threats.
+                </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-all">
+                <div class="text-emerald-400 font-semibold text-lg mb-2">Business Strategy</div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Applying strategic frameworks from Mannheim Business School alongside hands-on startup execution experience.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Resources Section for Email Capture/CV Templates -->
+    <section id="resources" class="max-w-3xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="p-8 rounded-xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 text-center">
+            <h3 class="text-xl font-bold text-slate-100">Get My German Market CV Template</h3>
+            <p class="mt-2 text-sm text-slate-400">The exact ATS-optimized format I used to break into the German corporate and startup landscape.</p>
+            <div class="mt-6 flex max-w-md mx-auto gap-2">
+                <input type="email" placeholder="Enter your email" class="bg-slate-900 border border-slate-800 rounded-lg px-4 py-2 text-sm w-full focus:outline-none focus:border-indigo-500 text-slate-100">
+                <button class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-colors">
+                    Join Waiting List
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="text-center py-12 text-xs text-slate-600 border-t border-slate-900">
+        © 2026 A Brown Diary. All rights reserved.
+    </footer>
+
+</body>
+</html>
