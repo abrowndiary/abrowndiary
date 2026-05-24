@@ -3,97 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Brown Diary | Tech, Business & Life</title>
-    <!-- Tailwind CSS CDN for high-end styling -->
+    <title>A Brown Diary</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        body { background-color: #0A0A0C; color: #F1F5F9; font-family: system-ui, -apple-system, sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .qualy { font-family: system-ui; font-weight: 900; letter-spacing: -0.04em; } /* Qualy approximation */
     </style>
 </head>
-<body class="antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
-
-    <!-- Simple Modern Navbar -->
-    <nav class="border-b border-slate-800/60 sticky top-0 bg-[#0A0A0C]/80 backdrop-blur-md z-50">
-        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <span class="text-sm font-bold tracking-wider uppercase text-slate-200">
-                A Brown Diary .
-            </span>
-            <div class="flex gap-6 text-sm text-slate-400">
-                <a href="#about" class="hover:text-slate-100 transition-colors">Core</a>
-                <a href="#resources" class="hover:text-slate-100 transition-colors">Templates</a>
+<body class="bg-[#0A0A0C] text-slate-200 antialiased">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 border-b border-white/10 bg-[#0A0A0C]/80 backdrop-blur-lg">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="qualy text-2xl tracking-tighter">A Brown Diary</span>
+            </div>
+            <div class="flex gap-8 text-sm">
+                <a href="#journal" class="hover:text-white transition">Journal</a>
+                <a href="#videos" class="hover:text-white transition">Videos</a>
+                <a href="#resources" class="hover:text-white transition">Resources</a>
+                <a href="#about" class="hover:text-white transition">About</a>
             </div>
         </div>
     </nav>
 
-    <!-- Premium Hero Section -->
-    <header class="max-w-4xl mx-auto px-6 pt-24 pb-16 text-center relative">
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white via-slate-200 to-slate-400 leading-tight">
-            Decoding Tech. Scaling Ventures.<br>Navigating Life in Germany.
-        </h1>
-        <p class="mt-6 text-base md:text-lg text-slate-400 max-w-xl mx-auto leading-relaxed">
-            From a Mannheim Business School MBA to implementing AI, automation, and cybersecurity solutions. Sharing tactical experiences, career guidance, and unedited chapters of my startup journey.
-        </p>
-        
-        <!-- Call to Action Buttons -->
-        <div class="mt-10 flex flex-wrap justify-center gap-4">
-            <a href="#resources" class="inline-flex items-center bg-slate-100 text-slate-900 px-5 py-2.5 rounded-lg font-medium text-sm hover:bg-slate-200 transition-all shadow-lg">
-                Get Free CV Template
-            </a>
-            <a href="https://youtube.com" target="_blank" class="inline-flex items-center bg-slate-900 text-slate-300 border border-slate-800 px-5 py-2.5 rounded-lg font-medium text-sm hover:bg-slate-800 transition-all">
-                Watch on YouTube
-            </a>
+    <!-- Hero -->
+    <header class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h1 class="qualy text-7xl md:text-8xl tracking-tighter leading-none mb-6">
+                Life.<br>Tech.<br>Germany.
+            </h1>
+            <p class="text-xl text-slate-400 max-w-lg mx-auto">
+                Mannheim MBA turned operator. Sharing raw lessons from building in AI, automation, cybersecurity and startups.
+            </p>
+            <div class="mt-12 flex gap-4 justify-center">
+                <a href="#resources" class="bg-white text-black px-8 py-4 rounded-2xl font-medium hover:scale-105 transition">
+                    Get Free German CV Template
+                </a>
+                <a href="https://youtube.com/@abrowndiary" target="_blank" class="border border-white/30 px-8 py-4 rounded-2xl hover:bg-white/5 transition flex items-center gap-2">
+                    <i class="fa-brands fa-youtube"></i> Watch Latest
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Three Pillars Section -->
-    <section id="about" class="max-w-6xl mx-auto px-6 py-16">
-        <div class="grid md:grid-cols-3 gap-6">
-            
-            <!-- Pillar 1 -->
-            <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm hover:border-indigo-500/40 transition-all">
-                <div class="text-indigo-400 font-semibold text-lg mb-2">AI & Automation</div>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Designing scalable business automation workflows and integrating artificial intelligence seamlessly into digital solutions.
-                </p>
-            </div>
-
-            <!-- Pillar 2 -->
-            <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm hover:border-cyan-500/40 transition-all">
-                <div class="text-cyan-400 font-semibold text-lg mb-2">Cybersecurity</div>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Protecting modern technical infrastructure and digital architectures against evolving cloud and asset threats.
-                </p>
-            </div>
-
-            <!-- Pillar 3 -->
-            <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-sm hover:border-emerald-500/40 transition-all">
-                <div class="text-emerald-400 font-semibold text-lg mb-2">Business Strategy</div>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Applying strategic frameworks from Mannheim Business School alongside hands-on startup execution experience.
-                </p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Resources Section for Email Capture/CV Templates -->
-    <section id="resources" class="max-w-3xl mx-auto px-6 py-16 border-t border-slate-900">
-        <div class="p-8 rounded-xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 text-center">
-            <h3 class="text-xl font-bold text-slate-100">Get My German Market CV Template</h3>
-            <p class="mt-2 text-sm text-slate-400">The exact ATS-optimized format I used to break into the German corporate and startup landscape.</p>
-            <div class="mt-6 flex max-w-md mx-auto gap-2">
-                <input type="email" placeholder="Enter your email" class="bg-slate-900 border border-slate-800 rounded-lg px-4 py-2 text-sm w-full focus:outline-none focus:border-indigo-500 text-slate-100">
-                <button class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-colors">
-                    Join Waiting List
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Simple Footer -->
-    <footer class="text-center py-12 text-xs text-slate-600 border-t border-slate-900">
-        © 2026 A Brown Diary. All rights reserved.
-    </footer>
-
+    <!-- More sections... -->
 </body>
 </html>
